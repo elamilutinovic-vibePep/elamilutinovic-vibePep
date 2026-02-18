@@ -14,4 +14,10 @@ I build structured web solutions with calm, phase-driven execution.
 **Principles**
 - Clear scope, controlled change, documented delivery
 
+**Approach**
+- Architecture first
+- Security by default (RLS mindset)
+- Controlled migrations
+- Documentation as part of delivery
+
 📫 Contact: vibepep.com (soon)
