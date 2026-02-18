@@ -1,16 +1,17 @@
-## Hi there 👋
+## Hi, I'm Ela 👋
 
-<!--
-**elamilutinovic-vibePep/elamilutinovic-vibePep** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I build structured web solutions with calm, phase-driven execution.
 
-Here are some ideas to get you started:
+**Focus**
+- Supabase architecture (RLS, RPC, Edge Functions)
+- Maintainable backend systems (Postgres mindset)
+- Migrations and long-term cost control
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+**Current**
+- Little_Biker — backend in progress
+- VibePep — structured consulting site
+
+**Principles**
+- Clear scope, controlled change, documented delivery
+
+📫 Contact: vibepep.com (soon)
