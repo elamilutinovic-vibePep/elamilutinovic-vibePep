@@ -49,59 +49,59 @@ StoragePolicies --> Files[(Storage Objects)]
 
 ```
 
-Selected Work
-Supabase Security Labs
+## Selected Work
+### Supabase Security Labs
 
 Reproducible labs demonstrating common Supabase authorization failures and debugging workflows.
 
 Topics include:
 
-RLS policy mistakes
+- RLS policy mistakes
 
-Edge Function authorization context
+- Edge Function authorization context
 
-service_role misuse
+- service_role misuse
 
-Storage access control
+- Storage access control
 
-multi-tenant isolation
+- multi-tenant isolation
 
 Repository:
 
 ➡ supabase-security-labs
 
-Supabase Patterns
+### Supabase Patterns
 
 Architecture patterns for building maintainable Supabase backends.
 
 Includes:
 
-Edge → RPC architecture patterns
+- Edge → RPC architecture patterns
 
-RLS policy design patterns
+- RLS policy design patterns
 
-Supabase security checklists
+- Supabase security checklists
 
-backend structure examples
+- backend structure examples
 
 Repository:
 
 ➡ supabase-patterns
 
-Principles
+### Principles
 
-Architecture first
+- Architecture first
 
-Security by default
+- Security by default
 
-Controlled migrations
+- Controlled migrations
 
-Documentation as part of delivery
+- Documentation as part of delivery
 
-Current
+### Current
 
-Little_Biker — backend in progress
+- **Little_Biker** — backend in progress
 
-VibePep — structured consulting site
+- **VibePep** — structured consulting site
 
 📫 Contact: https://vibepep.com
