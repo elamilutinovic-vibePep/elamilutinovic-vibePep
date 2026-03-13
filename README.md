@@ -68,7 +68,7 @@ Topics include:
 
 Repository:
 
-➡ supabase-security-labs
+➡ [supabase-security-labs](https://github.com/elamilutinovic-vibePep/supabase-security-labs)
 
 ### Supabase Patterns
 
@@ -86,7 +86,7 @@ Includes:
 
 Repository:
 
-➡ supabase-patterns
+➡ [supabase-patterns](https://github.com/elamilutinovic-vibePep/supabase-patterns)
 
 ### Principles
 
