@@ -1,107 +1,72 @@
 # Hi, I'm Ela 👋
 
-I build structured backend systems with a focus on **Supabase architecture, security and maintainable PostgreSQL design**.
+I focus on **Supabase backend architecture, authorization security, and maintainable PostgreSQL design**.
 
-My work explores how Supabase applications are built, how authorization failures occur, and how they can be diagnosed and fixed.
-
----
+I review and diagnose authentication, Row Level Security, RPC, Edge Function, Storage, and multi-tenant data-access problems. My approach is to identify the actual execution context, reproduce the failure, and verify the fix across ownership boundaries.
 
 ## Focus
 
-- Supabase backend architecture  
-- Row Level Security (RLS) design and debugging  
-- Edge → RPC workflows  
-- Multi-tenant system design  
-- PostgreSQL-first backend thinking  
+- Supabase Auth and authorization context
+- Row Level Security design and debugging
+- Database functions and RPC security
+- Edge Function → RPC → PostgreSQL boundaries
+- Multi-tenant ownership and data integrity
+- Controlled SQL migrations and reproducible verification
 
----
+## Selected public work
 
-## Supabase Backend Architecture (Typical Model)
+### [Supabase Security Labs](https://github.com/elamilutinovic-vibePep/supabase-security-labs)
 
-```mermaid
-flowchart TD
+Reproducible case-study labs for investigating common Supabase authorization failures.
 
-Client[Client Application]
+The labs cover:
 
-Client --> Auth[Supabase Auth]
+- broken and corrected RLS isolation;
+- user JWT versus `service_role` execution context;
+- Edge Function and database authorization boundaries;
+- private Storage and tenant-path isolation;
+- protected membership sources;
+- repeatable setup and verification workflows.
 
-Auth --> JWT[JWT Identity]
+### [Supabase Patterns](https://github.com/elamilutinovic-vibePep/supabase-patterns)
 
-JWT --> API[API Layer]
+Focused backend patterns for owner-only RLS, authenticated RPC operations, and Edge → RPC → RLS request flows.
 
-API --> Edge[Edge Functions]
+The repository includes:
 
-API --> PostgREST
+- SQL schemas, policies, functions, and grants;
+- automated two-user ownership-isolation tests;
+- direct RPC boundary and validation tests;
+- a structured Supabase security-review checklist;
+- a fast initial backend security-triage procedure;
+- explicit scope and limitation notes for every example.
 
-Edge --> RPC[RPC Functions]
+## Private project work
 
-PostgREST --> DB[(PostgreSQL)]
+### Little Biker
 
-RPC --> DB
+A private Supabase backend project designed around parent and child access with separate authorization contexts.
 
-DB --> RLS[Row Level Security]
+Implemented areas include:
 
-RLS --> Data[(Tenant Data)]
+- parent authentication and child avatar + PIN access;
+- short-lived child sessions and session revocation;
+- rate-limited PIN verification;
+- RLS, RPC, and Edge Function responsibility boundaries;
+- parent-owned family data and child-safe lesson access;
+- migration-based database development.
 
-DB --> StoragePolicies[Storage Policies]
+The source code is private. Related authorization patterns are demonstrated independently in my public repositories.
 
-StoragePolicies --> Files[(Storage Objects)]
+## Working principles
 
-```
+- Understand the ownership model before writing policies.
+- Treat the database as the final authorization boundary.
+- Use privileged access only through explicit, reviewable authorization.
+- Test with at least two identities across an ownership or tenant boundary.
+- Keep migrations, documentation, and verification aligned with the implementation.
+- Describe only behavior that has actually been demonstrated.
 
-## Selected Work
-### Supabase Security Labs
+## Contact
 
-Reproducible labs demonstrating common Supabase authorization failures and debugging workflows.
-
-Topics include:
-
-- RLS policy mistakes
-
-- Edge Function authorization context
-
-- service_role misuse
-
-- Storage access control
-
-- multi-tenant isolation
-
-Repository:
-
-➡ [supabase-security-labs](https://github.com/elamilutinovic-vibePep/supabase-security-labs)
-
-### Supabase Patterns
-
-Architecture patterns for building maintainable Supabase backends.
-
-Includes:
-
-- Edge → RPC architecture patterns
-
-- RLS policy design patterns
-
-- Supabase security checklists
-
-- backend structure examples
-
-Repository:
-
-➡ [supabase-patterns](https://github.com/elamilutinovic-vibePep/supabase-patterns)
-
-### Principles
-
-- Architecture first
-
-- Security by default
-
-- Controlled migrations
-
-- Documentation as part of delivery
-
-### Current
-
-- **Little_Biker** — backend in progress
-
-- **VibePep** — structured consulting site
-
-📫 Contact: https://vibepep.com
+Portfolio and contact: [vibepep.com](https://vibepep.com)
